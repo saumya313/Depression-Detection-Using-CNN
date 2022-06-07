@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+
+        <style>
+            body {
+                font-family: "Open Sans";
+                 min-height: 100vh;
+    background-color: #757f9a;
+    background-image: linear-gradient(147deg, #757f9a 0%, #d7dde8 100%);
+            }
+      #inputGroupFile01  {
+    opacity: 0;
+}
+
+#custom-file-label {
+    position: absolute;
+    top: 50%;
+    /*left: 1rem;
+*/    transform: translateY(-50%);
+}
+
+.image-area {
+    border: 2px dashed rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    position: relative;
+}
+
+.image-area::before {
+    content: 'Uploaded image result';
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.image-area img {
+    z-index: 2;
+    position: relative;
+}
+
+
+   
+        </style>
+
+    </head>
+
+    <body class="bg-light">
+        <div class="container py-5">
+             <h1 class="font-weight-bold m-5 text-white text-center">Depression Detection</h1>
+              <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+            <form class="needs-validation" action="" method="post">
+                <!-- <div class="row">
+                    <div class="col-md-8 mb-3"> -->
+                        <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                            <div class="custom-file border-0 btn btn-light m-0 rounded-pill px-4">
+                                <input type="file" class="custom-file-input border-light btn btn-light m-0 rounded-pill px-4" id="inputGroupFile01 ">
+                                <label class="custom-file-label border-0 btn btn-light m-0 rounded-pill float-left" for="inputGroupFile01">Choose file</label>
+                            </div>
+                        </div>
+                 <!--    </div>
+                </div> -->
+            </form>
+        </div>
+</div>
+</div>
+        <script>
+            $(document).ready(function() {
+                bsCustomFileInput.init()
+            });
+
+        </script>
+    </body>
+
+</html>
